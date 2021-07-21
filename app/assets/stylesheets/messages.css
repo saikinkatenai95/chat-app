@@ -5,7 +5,6 @@
   background-color: #253141;
   width: 300px;
   height: 100vh;
-  padding: 0px 20px;
 }
 
 .side-bar-header {
@@ -38,8 +37,8 @@
   overflow: scroll;
 }
 
-.room-name{
-  padding: 20px 0px 40px;
+.room{
+  padding: 20px 0 40px;
 }
 
 .room-name a{
@@ -51,17 +50,111 @@
   background-color: #FFFFFF;
   width: calc(100vw - 300px);
 }
+
 .chat-header {
   height: 100px;
   padding: 0px 40px;
+  display: flex;
+  justify-content: space-between;
 }
+
+.header-title{
+  font-size: 24px;
+  color: #333;
+  margin-top: 36px;
+}
+
+.header-button{
+  margin-top: 40px;
+}
+
+.header-button a {
+  text-decoration: none;
+  border: 1px solid darkred;
+  color: darkred;
+  padding: 20px;
+}
+
+
+
 .messages {
   background-color: #FAFAFA;
   height: calc(100vh - 100px - 90px);
   padding: 46px 40px 0px;
+  overflow: scroll;
+
 }
+
+.message{
+  margin: 10px 0 0 0 ;
+}
+
+.upper-message{
+  display: flex;
+}
+
+.message-user{
+  font-size: 16px;
+  color: #434A54;
+}
+
+.message-date{
+  font-size: 12px;
+  color: #999;
+  padding-left: 10px;
+}
+
+.lower-message{
+  margin-top: 10px;
+}
+
+.message-content{
+  font-size: 14px;
+  color: #434A54;
+  margin-bottom: 40px;
+}
+
+
 .form {
-  background-color: #DDDDDD;
   height: 90px;
+  background-color: #DDDDDD;
   padding: 20px 40px;
+  display: flex;
+}
+
+.form-input{
+  background-color: white;
+  width: 100%;
+  display: flex;
+}
+
+.form-message{
+  height: 50px;
+  width: 100%;
+  padding-left: 10px;
+  border: none;
+}
+
+.form-submit{
+  height: 50px;
+  background-color: #38AEF0;
+  color: white;
+  border: none;
+  font-size: 16px;
+  margin-left: 15px;
+  padding: 0px 20px;
+}
+
+.form-image{
+  font-size: 12px;
+  background-color: lightblue;
+  color: white;
+  padding: 12px;
+  width: 60px;
+  margin: 5px 10px;
+  text-align: center;
+}
+
+.hidden{
+  display: none;
 }
